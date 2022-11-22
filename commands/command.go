@@ -111,8 +111,8 @@ func RegisterModel() {
 		new(models.TeamMember),
 		new(models.TeamRelationship),
 		new(models.Itemsets),
-    new(models.Comment),
-    new(models.WorkWeixinAccount),
+		new(models.Comment),
+		new(models.WorkWeixinAccount),
 	)
 	gob.Register(models.Blog{})
 	gob.Register(models.Document{})
@@ -313,7 +313,7 @@ func ResolveCommand(args []string) {
 
 	if conf.ConfigurationFile == "" {
 		conf.ConfigurationFile = conf.WorkingDir("conf", "app.conf")
-		config := conf.WorkingDir("conf", "app.conf.example")
+		config := conf.WorkingDir("conf", "app.conf")
 		if !filetil.FileExists(conf.ConfigurationFile) && filetil.FileExists(config) {
 			_ = filetil.CopyFile(conf.ConfigurationFile, config)
 		}
