@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="Minho" />
+    <link rel="shortcut icon" href="{{cdnimg "/static/favicon.ico"}}">
+    <meta name="site" content="https://www.iminho.me" />
     <title>{{i18n .Lang "project.prj_space_list_of" .Model.ItemName}}</title>
     <meta name="keywords" content="MinDoc,文档在线管理系统,WIKI,wiki,wiki在线,文档在线管理,接口文档在线管理,接口文档管理,{{.Model.ItemName}}">
     <meta name="description" content="MinDoc文档在线管理系统 {{.site_description}}">
